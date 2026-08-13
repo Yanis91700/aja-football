@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "categorie": "U7 · U9",
+      "jour": "Mercredi",
+      "horaire": "14h00 – 15h30",
+      "terrain": "Terrain synthétique",
+      "educateur": "Karim B."
+    },
+    {
+      "categorie": "U11",
+      "jour": "Mercredi",
+      "horaire": "16h00 – 17h30",
+      "terrain": "Terrain synthétique",
+      "educateur": "Sophie M."
+    },
+    {
+      "categorie": "U11",
+      "jour": "Vendredi",
+      "horaire": "17h30 – 19h00",
+      "terrain": "Terrain honneur",
+      "educateur": "Sophie M."
+    },
+    {
+      "categorie": "U13",
+      "jour": "Mardi",
+      "horaire": "18h00 – 19h30",
+      "terrain": "Terrain honneur",
+      "educateur": "David L."
+    },
+    {
+      "categorie": "U13",
+      "jour": "Jeudi",
+      "horaire": "18h00 – 19h30",
+      "terrain": "Terrain synthétique",
+      "educateur": "David L."
+    },
+    {
+      "categorie": "U15",
+      "jour": "Mardi",
+      "horaire": "19h00 – 20h30",
+      "terrain": "Terrain synthétique",
+      "educateur": "Marc T."
+    },
+    {
+      "categorie": "U15",
+      "jour": "Vendredi",
+      "horaire": "19h00 – 20h30",
+      "terrain": "Terrain honneur",
+      "educateur": "Marc T."
+    },
+    {
+      "categorie": "U18",
+      "jour": "Lundi",
+      "horaire": "19h30 – 21h00",
+      "terrain": "Terrain honneur",
+      "educateur": "Yanis L."
+    },
+    {
+      "categorie": "U18",
+      "jour": "Jeudi",
+      "horaire": "19h30 – 21h00",
+      "terrain": "Terrain synthétique",
+      "educateur": "Yanis L."
+    },
+    {
+      "categorie": "Séniors",
+      "jour": "Mardi",
+      "horaire": "20h00 – 21h30",
+      "terrain": "Terrain honneur",
+      "educateur": "Franck D."
+    },
+    {
+      "categorie": "Séniors",
+      "jour": "Jeudi",
+      "horaire": "20h00 – 21h30",
+      "terrain": "Terrain honneur",
+      "educateur": "Franck D."
+    },
+    {
+      "categorie": "Loisir",
+      "jour": "Vendredi",
+      "horaire": "20h30 – 22h00",
+      "terrain": "Terrain synthétique",
+      "educateur": "Ouvert à tous"
+    }
+  ]
+}

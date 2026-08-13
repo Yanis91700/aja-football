@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "date": "2026-03-15",
+      "heure": "10h00",
+      "categorie": "U13",
+      "domicile": "AJA Football",
+      "exterieur": "US Fontenay",
+      "lieu": "Domicile"
+    },
+    {
+      "date": "2026-03-15",
+      "heure": "14h30",
+      "categorie": "U15",
+      "domicile": "CO Vincennes",
+      "exterieur": "AJA Football",
+      "lieu": "Extérieur"
+    },
+    {
+      "date": "2026-03-16",
+      "heure": "15h00",
+      "categorie": "Séniors",
+      "domicile": "AJA Football",
+      "exterieur": "AS Bagneux",
+      "lieu": "Domicile"
+    },
+    {
+      "date": "2026-03-22",
+      "heure": "10h00",
+      "categorie": "U11",
+      "domicile": "AJA Football",
+      "exterieur": "FC Massy",
+      "lieu": "Domicile"
+    },
+    {
+      "date": "2026-03-22",
+      "heure": "16h00",
+      "categorie": "U18",
+      "domicile": "ES Chatenay",
+      "exterieur": "AJA Football",
+      "lieu": "Extérieur"
+    },
+    {
+      "date": "2026-03-23",
+      "heure": "15h00",
+      "categorie": "Séniors",
+      "domicile": "US Palaiseau",
+      "exterieur": "AJA Football",
+      "lieu": "Extérieur"
+    },
+    {
+      "date": "2026-03-29",
+      "heure": "10h30",
+      "categorie": "U13",
+      "domicile": "RC Sceaux",
+      "exterieur": "AJA Football",
+      "lieu": "Extérieur"
+    },
+    {
+      "date": "2026-03-29",
+      "heure": "14h00",
+      "categorie": "U15",
+      "domicile": "AJA Football",
+      "exterieur": "AS Clamart",
+      "lieu": "Domicile"
+    }
+  ]
+}

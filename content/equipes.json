@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "groupe": "ecole",
+      "nom": "U7",
+      "annees": "2019-2020",
+      "coach": "Karim Benali",
+      "creneau": "Mercredi 14h00",
+      "effectif": 24,
+      "texte": "Première approche du ballon par le jeu. Motricité, plaisir et découverte, sans compétition.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_prNkdSX9TqKsloZcn41FYChwT3_pLas1yJwQn_WCwcH8sRLN2bM60Ai9s6PgbhdAJ4tgtdFhkVebNmNoBr3kHleC2kY8lExFeloNeK84K9WMZnkhra0OSJ41KgsTsCYlHgh1PFk_bCPooaESll-fdy2yDfz8K-7tc36o3k4ClRCcYYg7ro2JVlFVnwvIp1B7ds6Dpd03VYpi_72u1KEqHwuuKm8gdiwHe51h0pDIvty830qUQ9k4lqseb-MQBjoIk_vkeajp9g"
+    },
+    {
+      "groupe": "ecole",
+      "nom": "U9",
+      "annees": "2017-2018",
+      "coach": "Karim Benali",
+      "creneau": "Mercredi 14h00",
+      "effectif": 28,
+      "texte": "Premiers plateaux le samedi matin. On apprend à jouer ensemble et à respecter les règles.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA2LD5YuZUtwbZY6SMPi8EMb4xSIju-vcLlsQVYuFSLd8_qcICMTepnnGno8DXddGUjEf13421LBvITaLIY3kPP6bGyrtUj8_J5fThVlq6-oKEmXG5INkSm9I9gZE3-ujeH2bUgoyJEv7tl9fbw89AI8NtruP6AzlxAHglKbAbyEzt0LXhca276DMTSoLWcv2XvVyf09BQMDGGGaxv1mY5FwKYaHuCZOMGG8nX2QgfSxZIUgAeZafTPGCqbqEBW6S9JPbKkN17Ajg"
+    },
+    {
+      "groupe": "ecole",
+      "nom": "U11",
+      "annees": "2015-2016",
+      "coach": "Sophie Marchand",
+      "creneau": "Mercredi & vendredi",
+      "effectif": 26,
+      "texte": "Début du football à 8. Travail technique individuel et premières notions de placement.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLOE7u60rRksqoQH110DpT2ea3DtQbxQ2Qq1gwzqIwnIgvZOXTp1r7zu-3Bmvp76t9UUxO52bfTuitDjR6WN3ATffzKl6yM0e1rLW1b851jPm21Gts-j5kDLYGmOa1Qa0zv_9e_3e_6vtOS1MyjknvyApVl70DV2qBksNnyrPJSyHG3_T17GqgbM7-4aeFzFpeId49Xj7ugMwQ0A-VKmMtLv2gmKIfkWI42JlCiatylf0x2gjHp0UqczKAdxRuTeaYaMBkA5yUOQ"
+    },
+    {
+      "groupe": "jeunes",
+      "nom": "U13",
+      "annees": "2013-2014",
+      "coach": "David Lefèvre",
+      "creneau": "Mardi & jeudi",
+      "effectif": 22,
+      "texte": "Passage au championnat. L'exigence monte, l'esprit d'équipe aussi.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDvju4uhfqU6TUtC4MsSR7Gaz2KxgCKwsgeX6qdstHzBWGTcGbJ7mUVvstv6jxGsyMuye-0vSOIP-ZYcu5tZDzft29Rj2fDT_ET8gpT5I3LKorzvNGPF-0qQ6Pz2DWWdutt7aNzw534cDyLbMTny_40jaz5nSGJRku1Vsi5wdMKc_nszTWF7mZK5P71c1ONkFUdQQnSBf1yF_CDUwhtL-8alFVsUTOPrejdJb3_TSmVVzk2lE6C1PIBcwfmxfSUWgSg8SP7lHO0Vg"
+    },
+    {
+      "groupe": "jeunes",
+      "nom": "U15",
+      "annees": "2011-2012",
+      "coach": "Marc Toussaint",
+      "creneau": "Mardi & vendredi",
+      "effectif": 20,
+      "texte": "Football à 11. Travail physique adapté à la croissance et lecture tactique du jeu.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLOE7u60rRksqoQH110DpT2ea3DtQbxQ2Qq1gwzqIwnIgvZOXTp1r7zu-3Bmvp76t9UUxO52bfTuitDjR6WN3ATffzKl6yM0e1rLW1b851jPm21Gts-j5kDLYGmOa1Qa0zv_9e_3e_6vtOS1MyjknvyApVl70DV2qBksNnyrPJSyHG3_T17GqgbM7-4aeFzFpeId49Xj7ugMwQ0A-VKmMtLv2gmKIfkWI42JlCiatylf0x2gjHp0UqczKAdxRuTeaYaMBkA5yUOQ"
+    },
+    {
+      "groupe": "jeunes",
+      "nom": "U18",
+      "annees": "2008-2010",
+      "coach": "Yanis Lamrabette",
+      "creneau": "Lundi & jeudi",
+      "effectif": 19,
+      "texte": "Dernière marche avant les séniors. Autonomie, responsabilité et haut niveau d'engagement.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_prNkdSX9TqKsloZcn41FYChwT3_pLas1yJwQn_WCwcH8sRLN2bM60Ai9s6PgbhdAJ4tgtdFhkVebNmNoBr3kHleC2kY8lExFeloNeK84K9WMZnkhra0OSJ41KgsTsCYlHgh1PFk_bCPooaESll-fdy2yDfz8K-7tc36o3k4ClRCcYYg7ro2JVlFVnwvIp1B7ds6Dpd03VYpi_72u1KEqHwuuKm8gdiwHe51h0pDIvty830qUQ9k4lqseb-MQBjoIk_vkeajp9g"
+    },
+    {
+      "groupe": "adultes",
+      "nom": "Séniors",
+      "annees": "2007 et avant",
+      "coach": "Franck Dubois",
+      "creneau": "Mardi & jeudi",
+      "effectif": 24,
+      "texte": "L'équipe fanion du club, engagée en championnat départemental.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuArjUjienP0qGz_KGLL7BrkKlbBfYVhJxGOFrmYbjCbN7o169Xv2aG5zf8T0rpeF0DHRfjaN8PtwU16Wzy-kHy4xD-9MWmuA-NlI7gA2q-JRirHi3WwEU8kSpXfQfG8Ds5JpksTGgLmLnF00Lyw99SbaAF6yKk3myEqizOLEyEEpRqEzpBHbHwr0emPE_c4cFklsa1Tz_p7hPbmOaEYG-cZQvu6NCRY9ICDJ0ZWZAac-dH8y8x-Fiv5cCIMWH44_PCS5WuyoRPbeQ"
+    },
+    {
+      "groupe": "adultes",
+      "nom": "Loisir",
+      "annees": "Tous âges",
+      "coach": "Section autogérée",
+      "creneau": "Vendredi 20h30",
+      "effectif": 18,
+      "texte": "Le foot pour le plaisir, sans championnat ni pression. Ouvert à tous les niveaux.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA2LD5YuZUtwbZY6SMPi8EMb4xSIju-vcLlsQVYuFSLd8_qcICMTepnnGno8DXddGUjEf13421LBvITaLIY3kPP6bGyrtUj8_J5fThVlq6-oKEmXG5INkSm9I9gZE3-ujeH2bUgoyJEv7tl9fbw89AI8NtruP6AzlxAHglKbAbyEzt0LXhca276DMTSoLWcv2XvVyf09BQMDGGGaxv1mY5FwKYaHuCZOMGG8nX2QgfSxZIUgAeZafTPGCqbqEBW6S9JPbKkN17Ajg"
+    }
+  ]
+}

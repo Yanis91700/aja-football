@@ -1,0 +1,168 @@
+# ============================================================
+#  AJA FOOTBALL — Configuration de l'espace admin
+# ------------------------------------------------------------
+#  ⚠️  UNE SEULE PARTIE EST À COMPLÉTER : le bloc « backend »
+#      juste en dessous. DecapBridge te le fournira tout prêt
+#      au moment de créer ton site sur decapbridge.com.
+#      Tu remplaces les 6 lignes marquées, et rien d'autre.
+# ============================================================
+
+# ---------- À REMPLACER PAR LE BLOC FOURNI PAR DECAPBRIDGE ----------
+backend:
+  name: github
+  repo: Yanis91700/aja-football
+  branch: main
+  base_url: https://decapbridge.com        # ← fourni par DecapBridge
+  auth_endpoint: oauth/auth                # ← fourni par DecapBridge
+
+site_url: https://aja-football.netlify.app
+display_url: https://aja-football.netlify.app
+logo_url: https://aja-football.netlify.app/assets/img/equipe-club-partage.jpg
+# -------------------------------------------------------------------
+
+# Langue de l'interface
+locale: fr
+
+# Les photos envoyées depuis l'admin atterrissent ici
+media_folder: "assets/img"
+public_folder: "assets/img"
+
+# Message affiché dans l'historique des modifications
+publish_mode: simple
+
+collections:
+
+  # ---------------------------------------------------------
+  #  ACTUALITÉS — un article par fiche
+  # ---------------------------------------------------------
+  - name: "actualites"
+    label: "Actualités"
+    label_singular: "actualité"
+    folder: "content/actualites"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{date}} — {{titre}}"
+    sortable_fields: ["date", "titre"]
+    fields:
+      - { name: "titre", label: "Titre", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
+      - name: "categorie"
+        label: "Rubrique"
+        widget: "select"
+        default: "club"
+        options:
+          - { label: "Résultats", value: "resultats" }
+          - { label: "Vie du club", value: "club" }
+          - { label: "Formation", value: "formation" }
+          - { label: "Inscriptions", value: "inscriptions" }
+      - { name: "extrait", label: "Texte", widget: "text", hint: "Trois ou quatre phrases suffisent." }
+      - { name: "image", label: "Photo", widget: "image", required: false, hint: "Glisse une photo, ou colle un lien." }
+
+  # ---------------------------------------------------------
+  #  MATCHS
+  # ---------------------------------------------------------
+  - name: "matchs"
+    label: "Matchs"
+    files:
+      - name: "calendrier"
+        label: "Calendrier des rencontres"
+        file: "content/matchs.json"
+        description: "Les 3 matchs les plus proches s'affichent aussi sur la page d'accueil. Le tri par date est automatique."
+        fields:
+          - name: "items"
+            label: "Rencontres"
+            label_singular: "rencontre"
+            widget: "list"
+            summary: "{{fields.date}} — {{fields.categorie}} : {{fields.domicile}} contre {{fields.exterieur}}"
+            fields:
+              - { name: "date", label: "Date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, picker_utc: true }
+              - { name: "heure", label: "Heure", widget: "string", hint: "Par exemple : 10h00" }
+              - { name: "categorie", label: "Catégorie", widget: "string", hint: "U13, Séniors…" }
+              - { name: "domicile", label: "Équipe qui reçoit", widget: "string" }
+              - { name: "exterieur", label: "Équipe qui se déplace", widget: "string" }
+              - name: "lieu"
+                label: "Pour l'AJA"
+                widget: "select"
+                default: "Domicile"
+                options: ["Domicile", "Extérieur"]
+
+  # ---------------------------------------------------------
+  #  ENTRAÎNEMENTS
+  # ---------------------------------------------------------
+  - name: "entrainements"
+    label: "Entraînements"
+    files:
+      - name: "creneaux"
+        label: "Créneaux de la semaine"
+        file: "content/entrainements.json"
+        fields:
+          - name: "items"
+            label: "Créneaux"
+            label_singular: "créneau"
+            widget: "list"
+            summary: "{{fields.categorie}} — {{fields.jour}} {{fields.horaire}}"
+            fields:
+              - { name: "categorie", label: "Catégorie", widget: "string" }
+              - name: "jour"
+                label: "Jour"
+                widget: "select"
+                options: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+              - { name: "horaire", label: "Horaire", widget: "string", hint: "Par exemple : 18h00 – 19h30" }
+              - { name: "terrain", label: "Terrain", widget: "string" }
+              - { name: "educateur", label: "Éducateur", widget: "string" }
+
+  # ---------------------------------------------------------
+  #  ÉQUIPES
+  # ---------------------------------------------------------
+  - name: "equipes"
+    label: "Équipes"
+    files:
+      - name: "categories"
+        label: "Les catégories du club"
+        file: "content/equipes.json"
+        fields:
+          - name: "items"
+            label: "Équipes"
+            label_singular: "équipe"
+            widget: "list"
+            summary: "{{fields.nom}} — {{fields.coach}}"
+            fields:
+              - { name: "nom", label: "Nom de la catégorie", widget: "string", hint: "U13, Séniors, Loisir…" }
+              - name: "groupe"
+                label: "Groupe"
+                widget: "select"
+                default: "jeunes"
+                options:
+                  - { label: "École de foot", value: "ecole" }
+                  - { label: "Jeunes", value: "jeunes" }
+                  - { label: "Adultes", value: "adultes" }
+              - { name: "annees", label: "Années de naissance", widget: "string" }
+              - { name: "coach", label: "Éducateur", widget: "string" }
+              - { name: "creneau", label: "Créneau", widget: "string" }
+              - { name: "effectif", label: "Nombre de licenciés", widget: "number", value_type: "int", min: 0 }
+              - { name: "texte", label: "Description", widget: "text" }
+              - { name: "image", label: "Photo", widget: "image", required: false }
+
+  # ---------------------------------------------------------
+  #  CHIFFRES CLÉS DE LA PAGE D'ACCUEIL
+  # ---------------------------------------------------------
+  - name: "chiffres"
+    label: "Chiffres clés"
+    files:
+      - name: "accueil"
+        label: "Bandeau de la page d'accueil"
+        file: "content/chiffres.json"
+        description: "Les quatre chiffres affichés sur fond sombre, juste sous la grande photo."
+        fields:
+          - name: "items"
+            label: "Chiffres"
+            label_singular: "chiffre"
+            widget: "list"
+            max: 4
+            summary: "{{fields.valeur}} — {{fields.label}}"
+            fields:
+              - { name: "valeur", label: "Chiffre", widget: "string" }
+              - { name: "label", label: "Légende", widget: "string" }

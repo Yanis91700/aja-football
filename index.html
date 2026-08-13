@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AJA Football — Club de football amateur à Antony</title>
+<meta name="description" content="Club formateur depuis 1991 à Antony (92). De l'école de foot aux séniors : entraînements, matchs, inscriptions et vie du club."/>
+<meta name="theme-color" content="#ffd700"/>
+<meta property="og:title" content="AJA Football — Club de football amateur à Antony"/>
+<meta property="og:description" content="Club formateur depuis 1991 à Antony (92). De l'école de foot aux séniors : entraînements, matchs, inscriptions et vie du club."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:image" content="https://aja-football.netlify.app/assets/img/equipe-club-partage.jpg"/>
+<meta property="og:image:alt" content="Les jeunes de l'AJA Football réunis autour de la Coupe du Monde"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23705d00'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='sans-serif' font-weight='bold' fill='%23ffd700'>A</text></svg>"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant transition-shadow duration-200">
+  <div class="flex justify-between items-center w-full page-x py-base max-w-7xl mx-auto">
+    <a class="flex items-center gap-sm shrink-0" href="index.html">
+      <img alt="Écusson du club AJA Football" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGf5Do5O-VIhlqbtAihqANOVQ2LAw_f_21pKf0nppJB6XSECiVdYZ-YuusLKjn8zi-0I5mHt4ylR4RtfLacpXNSG15bCAnwjEj3H6C3BkRBy_mxHuPyFK5k02phKl8BowL_kcY_NxD8cfhZ2heZN6f2lPBSJs86qJN5srhvwIfATAROdsmaCmFUDSgtblNhC9Yso-3UIBxqJkmG7jo4d4VI9Kon_DNgEFV1l-ykRgZscIL9Ru0tHygsQ_ZFdlxcOKknlCeblxI6g"/>
+      <span class="text-headline-md font-headline-md font-extrabold text-primary">AJA FOOTBALL</span>
+    </a>
+
+    <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-md">
+      <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="index.html" aria-current="page">Accueil</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="actualites.html">Actualités</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="planning.html">Planning</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="equipes.html">Équipes</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="galerie.html">Galerie</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-base">
+      <a class="hidden sm:inline-block bg-primary-container text-on-primary-container font-label-bold text-label-bold px-md py-sm rounded-lg hover:brightness-95 active:scale-95 duration-100" href="contact.html#inscription">
+        Nous rejoindre
+      </a>
+      <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu"
+              class="md:hidden p-base rounded-lg text-on-surface hover:bg-surface-container" id="menu-toggle" type="button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="md:hidden border-t border-outline-variant bg-surface" id="mobile-menu">
+    <nav aria-label="Navigation mobile" class="page-x py-base flex flex-col gap-xs">
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold bg-primary-container text-on-primary-container" href="index.html" aria-current="page">Accueil</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="actualites.html">Actualités</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="planning.html">Planning</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="equipes.html">Équipes</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="galerie.html">Galerie</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="contact.html">Contact</a>
+      <a class="mt-base text-center bg-primary-container text-on-primary-container font-label-bold px-md py-sm rounded-lg" href="contact.html#inscription">Nous rejoindre</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<!-- Hero -->
+<section class="relative min-h-[520px] md:min-h-[600px] flex items-center overflow-hidden bg-inverse-surface">
+  <div class="absolute inset-0 z-0">
+    <!-- Dégradé sombre à gauche : garde le texte lisible sans masquer les visages à droite -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20 z-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+    <img alt="Les jeunes de l'AJA Football réunis devant la Coupe du Monde et les deux étoiles, à Clairefontaine"
+         class="w-full h-full object-cover" style="object-position: center 68%;"
+         src="assets/img/equipe-club.jpg" fetchpriority="high"/>
+  </div>
+  <div class="relative z-20 page-x max-w-7xl mx-auto w-full py-xl">
+    <div class="max-w-2xl text-white">
+      <span class="inline-block bg-primary-container text-on-primary-container px-sm py-xs font-label-bold text-label-sm rounded-full mb-md">CLUB FORMATEUR DEPUIS 1991</span>
+      <h1 class="font-headline-xl text-3xl md:text-headline-xl leading-tight mb-md">Grandir ensemble,<br/>ballon au pied.</h1>
+      <p class="font-body-lg text-body-lg mb-lg text-surface-variant">De l'école de foot aux séniors, l'AJA Football accueille les jeunes d'Antony dans un club familial où la progression compte autant que le résultat.</p>
+      <div class="flex flex-col sm:flex-row gap-sm">
+        <a class="bg-primary-container text-on-primary-container font-label-bold text-label-bold px-lg py-md rounded-lg text-center hover:brightness-95 active:scale-95 duration-100" href="contact.html#inscription">Inscrire mon enfant</a>
+        <a class="bg-white/10 border border-white/30 text-white font-label-bold text-label-bold px-lg py-md rounded-lg text-center hover:bg-white/20 backdrop-blur-sm transition-colors" href="planning.html">Voir le planning</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chiffres clés -->
+<section class="bg-inverse-surface border-t border-white/10 py-lg page-x">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-md" data-render="chiffres"></div>
+</section>
+
+<!-- Prochains rendez-vous -->
+<section class="py-xl page-x bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-lg gap-sm">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg mb-xs">Prochains rendez-vous</h2>
+        <p class="text-secondary">Les matchs du week-end à venir.</p>
+      </div>
+      <a class="font-label-bold text-label-bold text-primary inline-flex items-center gap-xs hover:gap-sm transition-all" href="planning.html">
+        Tout le calendrier <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" data-render="matchs-accueil"></div>
+  </div>
+</section>
+
+<!-- Actualités -->
+<section class="py-xl page-x bg-surface-container-low">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-lg gap-sm">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg mb-xs">Dernières actualités</h2>
+        <p class="text-secondary">La vie du club, semaine après semaine.</p>
+      </div>
+      <a class="font-label-bold text-label-bold text-primary inline-flex items-center gap-xs hover:gap-sm transition-all" href="actualites.html">
+        Toutes les actus <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" data-render="actus-accueil"></div>
+  </div>
+</section>
+
+<!-- L'esprit AJA -->
+<section class="py-xl page-x max-w-7xl mx-auto overflow-hidden">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+    <div class="reveal">
+      <h2 class="font-headline-lg text-headline-lg mb-md">L'esprit AJA Football</h2>
+      <p class="text-body-lg text-secondary mb-lg">Depuis 1991, le club forme les jeunes d'Antony avec la même idée : le football est d'abord une école de vie. Respect de l'adversaire, goût de l'effort et plaisir de jouer — c'est ce que nos éducateurs transmettent chaque semaine.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+        <div class="bg-surface-container p-md rounded-xl border border-outline-variant">
+          <h3 class="font-label-bold text-primary flex items-center gap-xs mb-xs"><span class="material-symbols-outlined text-base">group</span> 100% Familial</h3>
+          <p class="text-label-sm text-secondary">Un club où tout le monde se connaît et s'entraide.</p>
+        </div>
+        <div class="bg-surface-container p-md rounded-xl border border-outline-variant">
+          <h3 class="font-label-bold text-primary flex items-center gap-xs mb-xs"><span class="material-symbols-outlined text-base">stars</span> Encadrement diplômé</h3>
+          <p class="text-label-sm text-secondary">Des éducateurs formés et brevetés à chaque catégorie.</p>
+        </div>
+        <div class="bg-surface-container p-md rounded-xl border border-outline-variant">
+          <h3 class="font-label-bold text-primary flex items-center gap-xs mb-xs"><span class="material-symbols-outlined text-base">diversity_3</span> Ouvert à tous</h3>
+          <p class="text-label-sm text-secondary">De 5 ans aux séniors, filles et garçons, tous niveaux.</p>
+        </div>
+        <div class="bg-surface-container p-md rounded-xl border border-outline-variant">
+          <h3 class="font-label-bold text-primary flex items-center gap-xs mb-xs"><span class="material-symbols-outlined text-base">emoji_events</span> Compétition &amp; loisir</h3>
+          <p class="text-label-sm text-secondary">Chacun trouve sa place, du plateau au championnat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative reveal">
+      <div class="absolute -bottom-12 -right-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+      <div class="bg-white p-base rounded-2xl shadow-xl rotate-3 hover:rotate-0 transition-transform duration-500">
+        <img alt="Les joueurs en cercle autour de leur coach" class="rounded-xl w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2LD5YuZUtwbZY6SMPi8EMb4xSIju-vcLlsQVYuFSLd8_qcICMTepnnGno8DXddGUjEf13421LBvITaLIY3kPP6bGyrtUj8_J5fThVlq6-oKEmXG5INkSm9I9gZE3-ujeH2bUgoyJEv7tl9fbw89AI8NtruP6AzlxAHglKbAbyEzt0LXhca276DMTSoLWcv2XvVyf09BQMDGGGaxv1mY5FwKYaHuCZOMGG8nX2QgfSxZIUgAeZafTPGCqbqEBW6S9JPbKkN17Ajg" loading="lazy"/>
+      </div>
+      <div class="absolute -top-10 -left-10 w-48 bg-surface-bright p-base rounded-2xl shadow-lg -rotate-6 hidden md:block">
+        <img alt="Brassard de capitaine aux couleurs du club" class="rounded-xl w-full h-32 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsiMXUYLx4zOq2LaVkbIr4Q1edcnvM1Gm9fp1VcZNv3Cdz5-274kU2pyeA09bZ_adur5t6I-FRu1xsah6q3-daU0k6e0RZFw0fbQcWqdswk2e9rvDjWF55xLgHcuOlAKHoqg5mDAkynDjaw-vPf97uVcgCPXABultRQe_H3KMegXs6yYyIP6ZtPjmZRamTjS9vgCj--8It9H0ritPq-fcjCu1ncHiV5WLfwDiwb0qaFepmvxbUoovlYj5r7XzLtwnlUbM0EQ9aEg" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Appel à l'action -->
+<section class="page-x pb-xl">
+  <div class="max-w-7xl mx-auto bg-inverse-surface rounded-3xl p-lg md:p-xl text-white relative overflow-hidden">
+    <div class="absolute -right-20 -top-20 w-72 h-72 bg-primary-container/20 rounded-full blur-3xl"></div>
+    <div class="relative grid grid-cols-1 md:grid-cols-[1fr_auto] gap-lg items-center">
+      <div>
+        <h2 class="font-headline-lg text-headline-lg mb-sm">Les inscriptions 2026-2027 sont ouvertes</h2>
+        <p class="text-surface-variant max-w-xl">Séances d'essai gratuites tout le mois de juin. Venez rencontrer les éducateurs et découvrir le club, sans engagement.</p>
+      </div>
+      <a class="bg-primary-container text-on-primary-container font-label-bold text-label-bold px-lg py-md rounded-lg text-center hover:brightness-95 active:scale-95 duration-100 whitespace-nowrap" href="contact.html#inscription">Demander une séance d'essai</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="bg-surface-container-highest py-xl page-x border-t border-outline-variant">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <div>
+      <span class="text-headline-lg font-headline-lg text-on-surface block mb-base">AJA FOOTBALL</span>
+      <p class="text-secondary mb-md max-w-xs">Club formateur historique fondé en 1991, dédié à l'excellence et à la passion du football jeunesse.</p>
+      <div class="flex gap-md">
+        <a aria-label="Nous écrire" class="text-on-surface-variant hover:text-primary" href="mailto:yanislamrabette@gmail.com"><span class="material-symbols-outlined">mail</span></a>
+        <a aria-label="Nous appeler" class="text-on-surface-variant hover:text-primary" href="tel:+33683830615"><span class="material-symbols-outlined">call</span></a>
+        <a aria-label="Nous situer" class="text-on-surface-variant hover:text-primary" href="contact.html#acces"><span class="material-symbols-outlined">location_on</span></a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-md">
+      <div class="space-y-xs">
+        <h2 class="font-label-bold text-on-surface mb-base">Le Club</h2>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="equipes.html">Équipes</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="galerie.html">Galerie</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="actualites.html">Actualités</a>
+      </div>
+      <div class="space-y-xs">
+        <h2 class="font-label-bold text-on-surface mb-base">Liens Utiles</h2>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="contact.html#inscription">Inscriptions</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="planning.html">Planning</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="md:text-right flex flex-col justify-between gap-md">
+      <div>
+        <h2 class="font-label-bold text-on-surface mb-base">Nous trouver</h2>
+        <p class="text-on-surface-variant text-label-sm">rue Paul Bourget, 92160 Antony</p>
+        <p class="text-on-surface-variant text-label-sm">06 83 83 06 15</p>
+        <p class="text-on-surface-variant text-label-sm break-all">yanislamrabette@gmail.com</p>
+      </div>
+      <!-- Pas de lien vers l'espace admin : l'adresse /admin.html est
+           communiquée directement aux membres du bureau. -->
+      <p class="font-label-sm text-label-sm text-on-surface-variant">© <span data-year>2026</span> AJA Football Club. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/contenu.js"></script>
+<script src="assets/render.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

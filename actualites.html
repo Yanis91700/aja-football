@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Actualités — AJA Football</title>
+<meta name="description" content="Résultats des matchs, tournois, formation des éducateurs et informations d'inscription de l'AJA Football à Antony."/>
+<meta name="theme-color" content="#ffd700"/>
+<meta property="og:title" content="Actualités — AJA Football"/>
+<meta property="og:description" content="Résultats des matchs, tournois, formation des éducateurs et informations d'inscription de l'AJA Football à Antony."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:image" content="https://aja-football.netlify.app/assets/img/equipe-club-partage.jpg"/>
+<meta property="og:image:alt" content="Les jeunes de l'AJA Football réunis autour de la Coupe du Monde"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23705d00'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='sans-serif' font-weight='bold' fill='%23ffd700'>A</text></svg>"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+
+<header class="bg-surface sticky top-0 z-50 border-b border-outline-variant transition-shadow duration-200">
+  <div class="flex justify-between items-center w-full page-x py-base max-w-7xl mx-auto">
+    <a class="flex items-center gap-sm shrink-0" href="index.html">
+      <img alt="Écusson du club AJA Football" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGf5Do5O-VIhlqbtAihqANOVQ2LAw_f_21pKf0nppJB6XSECiVdYZ-YuusLKjn8zi-0I5mHt4ylR4RtfLacpXNSG15bCAnwjEj3H6C3BkRBy_mxHuPyFK5k02phKl8BowL_kcY_NxD8cfhZ2heZN6f2lPBSJs86qJN5srhvwIfATAROdsmaCmFUDSgtblNhC9Yso-3UIBxqJkmG7jo4d4VI9Kon_DNgEFV1l-ykRgZscIL9Ru0tHygsQ_ZFdlxcOKknlCeblxI6g"/>
+      <span class="text-headline-md font-headline-md font-extrabold text-primary">AJA FOOTBALL</span>
+    </a>
+
+    <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-md">
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="index.html">Accueil</a>
+      <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1 transition-colors duration-200" href="actualites.html" aria-current="page">Actualités</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="planning.html">Planning</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="equipes.html">Équipes</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="galerie.html">Galerie</a>
+      <a class="font-label-bold text-label-bold text-secondary hover:text-primary border-b-2 border-transparent pb-1 transition-colors duration-200" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-base">
+      <a class="hidden sm:inline-block bg-primary-container text-on-primary-container font-label-bold text-label-bold px-md py-sm rounded-lg hover:brightness-95 active:scale-95 duration-100" href="contact.html#inscription">
+        Nous rejoindre
+      </a>
+      <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu"
+              class="md:hidden p-base rounded-lg text-on-surface hover:bg-surface-container" id="menu-toggle" type="button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="md:hidden border-t border-outline-variant bg-surface" id="mobile-menu">
+    <nav aria-label="Navigation mobile" class="page-x py-base flex flex-col gap-xs">
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="index.html">Accueil</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold bg-primary-container text-on-primary-container" href="actualites.html" aria-current="page">Actualités</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="planning.html">Planning</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="equipes.html">Équipes</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="galerie.html">Galerie</a>
+      <a class="block px-md py-sm rounded-lg font-label-bold text-label-bold text-on-surface hover:bg-surface-container" href="contact.html">Contact</a>
+      <a class="mt-base text-center bg-primary-container text-on-primary-container font-label-bold px-md py-sm rounded-lg" href="contact.html#inscription">Nous rejoindre</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+<section class="bg-inverse-surface text-white py-xl page-x">
+  <div class="max-w-7xl mx-auto">
+    <span class="inline-block bg-primary-container text-on-primary-container px-sm py-xs font-label-bold text-label-sm rounded-full mb-md">ACTUALITÉS</span>
+    <h1 class="font-headline-xl text-3xl md:text-headline-xl mb-base">Toute la vie du club.</h1>
+    <p class="font-body-lg text-body-lg text-surface-variant max-w-2xl">Résultats, tournois, formation des éducateurs, inscriptions : retrouvez ici tout ce qui fait le quotidien de l'AJA Football.</p>
+  </div>
+</section>
+
+<section class="py-xl page-x bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap gap-sm mb-lg" data-filter-group data-filter-target="[data-category]" role="group" aria-label="Filtrer les actualités" data-render="filtres-actus"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" data-render="actus"></div>
+  </div>
+</section>
+
+<section class="page-x pb-xl">
+  <div class="max-w-7xl mx-auto bg-primary-container/20 border-2 border-dashed border-primary-container rounded-3xl p-lg text-center">
+    <span class="material-symbols-outlined text-primary text-5xl mb-sm">campaign</span>
+    <h2 class="font-headline-md text-primary mb-xs">Une info à partager ?</h2>
+    <p class="text-secondary mb-md max-w-xl mx-auto">Résultat de match, photo de tournoi, bonne nouvelle du club : envoyez-nous vos actualités, nous les publierons ici.</p>
+    <a class="inline-block bg-primary text-on-primary font-label-bold px-lg py-md rounded-lg hover:brightness-110 transition-all" href="contact.html">Nous écrire</a>
+  </div>
+</section>
+</main>
+<footer class="bg-surface-container-highest py-xl page-x border-t border-outline-variant">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    <div>
+      <span class="text-headline-lg font-headline-lg text-on-surface block mb-base">AJA FOOTBALL</span>
+      <p class="text-secondary mb-md max-w-xs">Club formateur historique fondé en 1991, dédié à l'excellence et à la passion du football jeunesse.</p>
+      <div class="flex gap-md">
+        <a aria-label="Nous écrire" class="text-on-surface-variant hover:text-primary" href="mailto:yanislamrabette@gmail.com"><span class="material-symbols-outlined">mail</span></a>
+        <a aria-label="Nous appeler" class="text-on-surface-variant hover:text-primary" href="tel:+33683830615"><span class="material-symbols-outlined">call</span></a>
+        <a aria-label="Nous situer" class="text-on-surface-variant hover:text-primary" href="contact.html#acces"><span class="material-symbols-outlined">location_on</span></a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-md">
+      <div class="space-y-xs">
+        <h2 class="font-label-bold text-on-surface mb-base">Le Club</h2>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="equipes.html">Équipes</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="galerie.html">Galerie</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="actualites.html">Actualités</a>
+      </div>
+      <div class="space-y-xs">
+        <h2 class="font-label-bold text-on-surface mb-base">Liens Utiles</h2>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="contact.html#inscription">Inscriptions</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="planning.html">Planning</a>
+        <a class="block text-on-surface-variant hover:text-primary text-label-sm" href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="md:text-right flex flex-col justify-between gap-md">
+      <div>
+        <h2 class="font-label-bold text-on-surface mb-base">Nous trouver</h2>
+        <p class="text-on-surface-variant text-label-sm">rue Paul Bourget, 92160 Antony</p>
+        <p class="text-on-surface-variant text-label-sm">06 83 83 06 15</p>
+        <p class="text-on-surface-variant text-label-sm break-all">yanislamrabette@gmail.com</p>
+      </div>
+      <!-- Pas de lien vers l'espace admin : l'adresse /admin.html est
+           communiquée directement aux membres du bureau. -->
+      <p class="font-label-sm text-label-sm text-on-surface-variant">© <span data-year>2026</span> AJA Football Club. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/contenu.js"></script>
+<script src="assets/render.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "valeur": "1991",
+      "label": "Année de création"
+    },
+    {
+      "valeur": "12",
+      "label": "Équipes engagées"
+    },
+    {
+      "valeur": "280",
+      "label": "Licenciés"
+    },
+    {
+      "valeur": "25",
+      "label": "Éducateurs"
+    }
+  ]
+}

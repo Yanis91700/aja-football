@@ -1,0 +1,64 @@
+# Configuration Netlify — AJA Football
+
+[build]
+  # À chaque publication depuis l'espace admin, Netlify relance ce script :
+  # il relit le dossier content/ et régénère assets/contenu.js.
+  command = "node build.mjs"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# --- En-têtes de sécurité (tout le site) --------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# --- L'espace admin ne doit jamais être indexé ni mis en cache ----------
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+# --- Cache long pour les fichiers qui changent rarement ------------------
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# --- Les pages sont revalidées à chaque visite ---------------------------
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# --- URL propres : /contact vaut /contact.html ---------------------------
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/planning"
+  to = "/planning.html"
+  status = 200
+
+[[redirects]]
+  from = "/equipes"
+  to = "/equipes.html"
+  status = 200
+
+[[redirects]]
+  from = "/galerie"
+  to = "/galerie.html"
+  status = 200
+
+[[redirects]]
+  from = "/actualites"
+  to = "/actualites.html"
+  status = 200

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Remplace l'adresse ci-dessous par ton domaine définitif une fois le site en ligne.
+Sitemap: https://aja-football.netlify.app/sitemap.xml
