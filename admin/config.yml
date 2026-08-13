@@ -1,24 +1,39 @@
 # ============================================================
 #  AJA FOOTBALL — Configuration de l'espace admin
 # ------------------------------------------------------------
-#  ⚠️  UNE SEULE PARTIE EST À COMPLÉTER : le bloc « backend »
-#      juste en dessous. DecapBridge te le fournira tout prêt
-#      au moment de créer ton site sur decapbridge.com.
-#      Tu remplaces les 6 lignes marquées, et rien d'autre.
+#  Ce fichier décrit les rubriques modifiables dans /admin.
+#  La connexion des utilisateurs passe par DecapBridge.
 # ============================================================
 
-# ---------- À REMPLACER PAR LE BLOC FOURNI PAR DECAPBRIDGE ----------
+# ---------- Connexion (fourni par DecapBridge) ----------
 backend:
-  name: github
+  name: git-gateway
   repo: Yanis91700/aja-football
   branch: main
-  base_url: https://decapbridge.com        # ← fourni par DecapBridge
-  auth_endpoint: oauth/auth                # ← fourni par DecapBridge
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/12e018bc-e7a7-4444-a1c9-1b51d16b1ad7/pkce
+  auth_token_endpoint: /sites/12e018bc-e7a7-4444-a1c9-1b51d16b1ad7/token
+  gateway_url: https://gateway.decapbridge.com
+
+# Chaque modification est signée du nom de son auteur
+commit_messages:
+  create: 'Ajout {{collection}} « {{slug}} » — {{author-name}} <{{author-login}}> via DecapBridge'
+  update: 'Modification {{collection}} « {{slug}} » — {{author-name}} <{{author-login}}> via DecapBridge'
+  delete: 'Suppression {{collection}} « {{slug}} » — {{author-name}} <{{author-login}}> via DecapBridge'
+  uploadMedia: 'Ajout du fichier « {{path}} » — {{author-name}} <{{author-login}}> via DecapBridge'
+  deleteMedia: 'Suppression du fichier « {{path}} » — {{author-name}} <{{author-login}}> via DecapBridge'
+  openAuthoring: 'Message {{message}} — {{author-name}} <{{author-login}}> via DecapBridge'
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
 
 site_url: https://aja-football.netlify.app
 display_url: https://aja-football.netlify.app
 logo_url: https://aja-football.netlify.app/assets/img/equipe-club-partage.jpg
-# -------------------------------------------------------------------
 
 # Langue de l'interface
 locale: fr
