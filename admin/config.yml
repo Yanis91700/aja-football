@@ -181,3 +181,42 @@ collections:
             fields:
               - { name: "valeur", label: "Chiffre", widget: "string" }
               - { name: "label", label: "Légende", widget: "string" }
+
+
+  # ---------------------------------------------------------
+  #  GALERIE PHOTOS
+  # ---------------------------------------------------------
+  - name: "galerie"
+    label: "Galerie"
+    files:
+      - name: "photos"
+        label: "Photos de la galerie"
+        file: "content/galerie.json"
+        description: "Les photos s'affichent dans l'ordre de cette liste. Les grandes photos attirent l'œil : n'en mets qu'une ou deux."
+        fields:
+          - name: "items"
+            label: "Photos"
+            label_singular: "photo"
+            widget: "list"
+            summary: "{{fields.titre}} — {{fields.legende}}"
+            fields:
+              - { name: "image", label: "Photo", widget: "image", hint: "Glisse une image, idéalement 1600 px de large maximum." }
+              - { name: "titre", label: "Titre", widget: "string", hint: "S'affiche en gras au survol. Exemple : Le geste parfait" }
+              - { name: "legende", label: "Légende", widget: "string", required: false, hint: "Précision sous le titre. Exemple : Plateau régional, mars 2026" }
+              - name: "categorie"
+                label: "Rubrique"
+                widget: "select"
+                default: "vie-du-club"
+                options:
+                  - { label: "Matchs", value: "matchs" }
+                  - { label: "Entraînements", value: "entrainements" }
+                  - { label: "Tournois", value: "tournois" }
+                  - { label: "Vie du club", value: "vie-du-club" }
+              - name: "taille"
+                label: "Taille sur la page"
+                widget: "select"
+                default: "moyenne"
+                options:
+                  - { label: "Moyenne — un quart de largeur", value: "moyenne" }
+                  - { label: "Large — deux tiers de largeur", value: "large" }
+                  - { label: "Grande — haute, sur la gauche", value: "grande" }
