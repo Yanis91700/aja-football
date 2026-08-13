@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBLOE7u60rRksqoQH110DpT2ea3DtQbxQ2Qq1gwzqIwnIgvZOXTp1r7zu-3Bmvp76t9UUxO52bfTuitDjR6WN3ATffzKl6yM0e1rLW1b851jPm21Gts-j5kDLYGmOa1Qa0zv_9e_3e_6vtOS1MyjknvyApVl70DV2qBksNnyrPJSyHG3_T17GqgbM7-4aeFzFpeId49Xj7ugMwQ0A-VKmMtLv2gmKIfkWI42JlCiatylf0x2gjHp0UqczKAdxRuTeaYaMBkA5yUOQ",
+      "titre": "Intensité en match",
+      "legende": "Catégorie U11 — Mars 2026",
+      "categorie": "matchs",
+      "taille": "grande"
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC_prNkdSX9TqKsloZcn41FYChwT3_pLas1yJwQn_WCwcH8sRLN2bM60Ai9s6PgbhdAJ4tgtdFhkVebNmNoBr3kHleC2kY8lExFeloNeK84K9WMZnkhra0OSJ41KgsTsCYlHgh1PFk_bCPooaESll-fdy2yDfz8K-7tc36o3k4ClRCcYYg7ro2JVlFVnwvIp1B7ds6Dpd03VYpi_72u1KEqHwuuKm8gdiwHe51h0pDIvty830qUQ9k4lqseb-MQBjoIk_vkeajp9g",
+      "titre": "Transmission et écoute",
+      "legende": "Session tactique du mercredi",
+      "categorie": "entrainements",
+      "taille": "large"
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDvju4uhfqU6TUtC4MsSR7Gaz2KxgCKwsgeX6qdstHzBWGTcGbJ7mUVvstv6jxGsyMuye-0vSOIP-ZYcu5tZDzft29Rj2fDT_ET8gpT5I3LKorzvNGPF-0qQ6Pz2DWWdutt7aNzw534cDyLbMTny_40jaz5nSGJRku1Vsi5wdMKc_nszTWF7mZK5P71c1ONkFUdQQnSBf1yF_CDUwhtL-8alFVsUTOPrejdJb3_TSmVVzk2lE6C1PIBcwfmxfSUWgSg8SP7lHO0Vg",
+      "titre": "Le geste parfait",
+      "legende": "Plateau régional",
+      "categorie": "matchs",
+      "taille": "moyenne"
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA2LD5YuZUtwbZY6SMPi8EMb4xSIju-vcLlsQVYuFSLd8_qcICMTepnnGno8DXddGUjEf13421LBvITaLIY3kPP6bGyrtUj8_J5fThVlq6-oKEmXG5INkSm9I9gZE3-ujeH2bUgoyJEv7tl9fbw89AI8NtruP6AzlxAHglKbAbyEzt0LXhca276DMTSoLWcv2XvVyf09BQMDGGGaxv1mY5FwKYaHuCZOMGG8nX2QgfSxZIUgAeZafTPGCqbqEBW6S9JPbKkN17Ajg",
+      "titre": "Avant le coup d'envoi",
+      "legende": "Causerie d'avant-match",
+      "categorie": "vie-du-club",
+      "taille": "moyenne"
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAsiMXUYLx4zOq2LaVkbIr4Q1edcnvM1Gm9fp1VcZNv3Cdz5-274kU2pyeA09bZ_adur5t6I-FRu1xsah6q3-daU0k6e0RZFw0fbQcWqdswk2e9rvDjWF55xLgHcuOlAKHoqg5mDAkynDjaw-vPf97uVcgCPXABultRQe_H3KMegXs6yYyIP6ZtPjmZRamTjS9vgCj--8It9H0ritPq-fcjCu1ncHiV5WLfwDiwb0qaFepmvxbUoovlYj5r7XzLtwnlUbM0EQ9aEg",
+      "titre": "Le brassard",
+      "legende": "Capitanat U15",
+      "categorie": "vie-du-club",
+      "taille": "moyenne"
+    },
+    {
+      "image": "assets/img/equipe-club.jpg",
+      "titre": "Toute l'école de foot",
+      "legende": "Sortie à Clairefontaine",
+      "categorie": "tournois",
+      "taille": "large"
+    }
+  ]
+}
