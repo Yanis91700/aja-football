@@ -61,18 +61,34 @@ const GROUPES_EQUIPES = [
   { valeur: "adultes", label: "Adultes" },
 ];
 
+const CATEGORIES_GALERIE = [
+  { valeur: "all", label: "Toutes" },
+  { valeur: "matchs", label: "Matchs" },
+  { valeur: "entrainements", label: "Entraînements" },
+  { valeur: "tournois", label: "Tournois" },
+  { valeur: "vie-du-club", label: "Vie du club" },
+];
+
+// Taille de chaque photo dans la mosaïque de la galerie
+const TAILLES_GALERIE = {
+  grande: "md:col-span-4 md:row-span-4",
+  large: "md:col-span-8 md:row-span-2",
+  moyenne: "md:col-span-4 md:row-span-2",
+};
+
 const libelle = (liste, valeur) =>
   (liste.find((x) => x.valeur === valeur) || {}).label || valeur;
 
 /* ---- Construction ---------------------------------------------------- */
 console.log("Reconstruction du contenu du site…");
 
-const [chiffres, matchs, entrainements, equipes, photos] = await Promise.all([
+const [chiffres, matchs, entrainements, equipes, photos, galerie] = await Promise.all([
   lireJSON(join(CONTENU, "chiffres.json"), { items: [] }),
   lireJSON(join(CONTENU, "matchs.json"), { items: [] }),
   lireJSON(join(CONTENU, "entrainements.json"), { items: [] }),
   lireJSON(join(CONTENU, "equipes.json"), { items: [] }),
   lireJSON(join(CONTENU, "photos.json"), {}),
+  lireJSON(join(CONTENU, "galerie.json"), { items: [] }),
 ]);
 
 // Actualités : un fichier par article, les plus récentes en premier
@@ -110,14 +126,25 @@ const listeMatchs = (matchs.items || [])
     lieu: m.lieu || "Domicile",
   }));
 
+// Galerie : on traduit la taille choisie dans l'admin en classes d'affichage
+const listeGalerie = (galerie.items || []).map((p) => ({
+  image: p.image || "",
+  titre: p.titre || "",
+  legende: p.legende || "",
+  categorie: p.categorie || "vie-du-club",
+  span: TAILLES_GALERIE[p.taille] || TAILLES_GALERIE.moyenne,
+}));
+
 const contenu = {
   chiffres: chiffres.items || [],
   matchs: listeMatchs,
   entrainements: entrainements.items || [],
   actualites,
   equipes: equipes.items || [],
+  galerie: listeGalerie,
   categoriesActus: CATEGORIES_ACTUS,
   groupesEquipes: GROUPES_EQUIPES,
+  categoriesGalerie: CATEGORIES_GALERIE,
   "photothèque": photos,
 };
 
@@ -141,4 +168,5 @@ console.log("  matchs        :", contenu.matchs.length);
 console.log("  entraînements :", contenu.entrainements.length);
 console.log("  actualités    :", contenu.actualites.length);
 console.log("  équipes       :", contenu.equipes.length);
+console.log("  galerie       :", contenu.galerie.length);
 console.log("assets/contenu.js régénéré.");
