@@ -170,3 +170,53 @@
   remplir("filtres-actus", chips(C.categoriesActus));
   remplir("filtres-equipes", chips(C.groupesEquipes));
 })();
+
+
+/* ============================================================
+   GALERIE — mosaïque et filtres, pilotés depuis l'admin
+   ============================================================ */
+(function () {
+  const C = window.CONTENU;
+  const grille = document.querySelector(".gallery-grid");
+  if (!C || !grille || !Array.isArray(C.galerie)) return;
+
+  const esc = (s) =>
+    String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+
+  grille.innerHTML = C.galerie
+    .map(
+      (p) => `
+      <div class="${esc(p.span)} relative group rounded-2xl overflow-hidden shadow-lg border border-outline-variant"
+           data-category="${esc(p.categorie)}" data-lightbox="${esc(p.image)}"
+           data-caption="${esc(p.titre)}${p.legende ? " — " + esc(p.legende) : ""}"
+           aria-label="Agrandir : ${esc(p.titre)}">
+        <img alt="${esc(p.titre)}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="${esc(p.image)}" loading="lazy"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-md text-white">
+          <p class="font-label-bold">${esc(p.titre)}</p>
+          <p class="text-label-sm text-surface-variant">${esc(p.legende)}</p>
+        </div>
+        <span class="absolute top-sm right-sm bg-black/50 text-white rounded-full p-xs opacity-0 group-hover:opacity-100 transition-opacity">
+          <span class="material-symbols-outlined text-base">zoom_in</span>
+        </span>
+      </div>`
+    )
+    .join("");
+
+  // Les boutons de filtre de cette page
+  const groupe = document.querySelector('[data-filter-group][aria-label="Filtrer les photos"]');
+  if (groupe && Array.isArray(C.categoriesGalerie)) {
+    groupe.innerHTML = C.categoriesGalerie
+      .map(
+        (f, i) =>
+          `<button class="chip border border-outline-variant px-md py-sm rounded-full font-label-bold text-label-sm transition-colors hover:bg-surface-container-high${
+            i === 0 ? " active" : ""
+          }" data-filter="${esc(f.valeur)}" aria-pressed="${i === 0}" type="button">${esc(f.label)}</button>`
+      )
+      .join("\n");
+  }
+})();
