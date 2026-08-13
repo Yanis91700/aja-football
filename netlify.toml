@@ -25,15 +25,40 @@
     X-Robots-Tag = "noindex, nofollow"
     Cache-Control = "no-store"
 
-# --- Cache long pour les fichiers qui changent rarement ------------------
+# --- Cache long UNIQUEMENT pour les images -------------------------------
+# Elles ne changent pas : autant les garder en mémoire une semaine.
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# --- Le contenu du site est revalidé à chaque visite ---------------------
+# contenu.js est régénéré à chaque publication depuis l'admin : il ne doit
+# jamais rester en cache, sinon les modifications mettraient des jours à
+# apparaître chez les visiteurs.
+[[headers]]
+  for = "/assets/contenu.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
 
 # --- Les pages sont revalidées à chaque visite ---------------------------
 [[headers]]
   for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/content/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
